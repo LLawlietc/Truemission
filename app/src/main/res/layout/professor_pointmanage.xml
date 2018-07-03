@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/professor_pointmanage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.professor.professorsactivity.Professor_pointmanage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#ffe600"
+        android:text="专家你好，你目前的积分是："/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/point"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView"
+        android:textColor="#ff0048"
+        />
+    <Button
+        android:id="@+id/returnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/point"
+        android:text="返回专家界面"
+        android:onClick="turn_to_professorsstable"/>
+
+</RelativeLayout>

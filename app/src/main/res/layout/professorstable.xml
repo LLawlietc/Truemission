@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/professorstable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.professor.professorsactivity.Professorstable">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="您好，尊敬的专家！"
+        android:id="@+id/textView_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="6dp"
+        android:textSize="16dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查看问题"
+        android:id="@+id/userstable_btn_see"
+        android:onClick="turn_to_professor_seequestion"
+        android:textColor="#ffffff"
+        android:background="#256be5"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView_user"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="粉丝管理"
+        android:id="@+id/userstable_btn_fansmanage"
+        android:onClick="turn_to_professor_fansmanage"
+        android:textColor="#ffffff"
+        android:background="#e53b25"
+        android:textSize="20dp"
+        android:layout_below="@+id/userstable_btn_see"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="积分管理"
+        android:id="@+id/userstable_btn_pointmanage"
+        android:onClick="turn_to_professor_pointmanage"
+        android:textColor="#ffffff"
+        android:background="#5825e5"
+        android:textSize="20dp"
+        android:layout_below="@+id/userstable_btn_fansmanage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>
